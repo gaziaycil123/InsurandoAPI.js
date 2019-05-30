@@ -10,7 +10,7 @@ Yukarıda tanımlanan nesne üzerinden request'lerimizi gönderebiliriz.
 ## Posta Kodu
 ### Tüm Posta Kodları
 ``` js
-// Tüm posta kodlarını getir   
+// Tüm posta kodlarını getir  
 api.PostCode(function (response) {
     if (response.readyState != 4) return;
 
