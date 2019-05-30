@@ -1,18 +1,14 @@
 # Insurando
 
-Apilere bağlantıyı kolaylaştırmak için pure javascript ile yazılmıştır.
-Herhangi bir bağımlılığı yoktur.
-
+Apilere bağlantıyı kolaylaştırmak için pure javascript ile yazılmıştır. Herhangi bir bağımlılığı yoktur.
 Request'ler gönderilmeden önce "InsurandoAPI" nesnesinin örneği alınmalıdır.
 ``` js
 // API nesne örneği   
 var api = new InsurandoAPI('<baseUrl>/api/', '<kullanıcı adı>', '<şifre>');
 ```
-
 Yukarıda tanımlanan nesne üzerinden request'lerimizi gönderebiliriz.
 ## Posta Kodu
 ### Tüm Posta Kodları
-
 ``` js
 // Tüm posta kodlarını getir   
 api.PostCode(function (response) {
@@ -29,11 +25,9 @@ Response
 [1000,1003,1004,1005,...]
 ```
 ### Posta Kodu Arama
-Gönderilen parametre ile başlayan posta kodlarını arar. 
-Autocomplate,Typeahead vb. plugin'lerde kullanılabilir
+Gönderilen parametre ile başlayan posta kodlarını arar. Autocomplate,Typeahead vb. plugin'lerde kullanılabilir.
 
 Örneğin 100 ile başlayan posta kodlarını arayalım
-
 ``` js
 // "100" ile başlayan posta kodlarını   
 var postCodeStartWithSearchTerm = 100;
