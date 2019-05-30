@@ -99,5 +99,35 @@ Response
     }
 ]
 ```
+## Sigorta Şirketi
+Insurando sisteminde kayıtlı olan sigorta şirketlerine erişmek için kullanılır
+``` js
+// Tüm sağlık branşındaki sigorta şirketlerini getirir   
+api.Company.Health(function (response) {
+    if (response.readyState != 4) return;
 
+    if (response.status == 200) {
+        var data = JSON.parse(response.responseText);
+        console.log(data);
+    }
+});
+```
+Response
+``` js 
 
+[
+    {
+        "label": "Agrisano",
+        "value": "1560"
+    },
+    {
+        "label": "AMB",
+        "value": "1507"
+    },
+    {
+        "label": "Aquilana",
+        "value": "32"
+    },
+        ...
+]
+```
