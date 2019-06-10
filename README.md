@@ -157,7 +157,7 @@ var leadObject = {
 api.Lead(leadObject, function (response) {
     if (response.readyState != 4) return;
 
-    if (response.status == 200) {
+    if (response.status == 201) {
     var data = JSON.parse(response.responseText);
     console.log(data);
     }
